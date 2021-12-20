@@ -1,8 +1,8 @@
-title: Hamilton
-description: A minimal and beautiful Jekyll theme best for writing and note-taking.
-author: Shangzhi Huang
-avatar: /logo.png
-email: ngzhio@gmail.com
+title: Neatd
+description: Blog
+author: SeYeonPark
+avatar: /IMG_0884.jpg
+email: psytidy@gmail.com
 
 plugins:
   - jekyll-seo-tag
@@ -29,15 +29,11 @@ exclude:
 
 # Jekyll SEO Tag (Optional)
 # =========================
-twitter:
-  username: ngzhio
-  card: summary
-logo: logo.png
+logo: tdp.png
 social:
-  name: Shangzhi Huang
+  name: Se Yeon Park
   links:
-    - https://twitter.com/ngzhio
-    - https://www.facebook.com/ngzhio
-    - https://github.com/ngzhio
-google_site_verification: u4WXQl0Eu66rsQo2kRdCNx
+    - https://github.com/Neatd
+google_site_verification:
 lang: en
+skin: midnight
