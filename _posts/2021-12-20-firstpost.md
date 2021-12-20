@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "저의 첫 포스트가 잘 게시될 수 있을까요?"
-categories: misc
+categories: test
 tags: [markdown]
 author:
   - 박세연
