@@ -10,7 +10,7 @@ draft: false
 
 배열을 다루다 보면 **어떤 항목이 필요한지**와 **어떤 값으로 바꿀지**를 한 번에 생각하게 됩니다. 두 과정을 나누면 코드의 의도가 더 쉽게 드러납니다.
 
-![원본 배열에서 filter와 map을 거쳐 새 배열을 만드는 흐름](https://github.com/user-attachments/assets/6f354ff9-a542-4c3c-9ea6-790f3cfe445c)
+![원본 배열에서 filter와 map을 거쳐 새 배열을 만드는 흐름](https://github.com/user-attachments/assets/450aa561-887d-4e66-8bd5-20be771e706c)
 
 예를 들어 할 일 목록에서 완료한 항목의 제목만 모으려 합니다.
 
