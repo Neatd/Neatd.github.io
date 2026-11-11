@@ -5,6 +5,6 @@ export default {
   url: process.env.SITE_URL || 'https://Neatd.github.io',
   github: 'https://github.com/Neatd',
   email: 'psytidy@gmail.com',
-  portfolio: 'https://your-portfolio-url.com',
+  portfolio: 'https://dolomite-ixia-324.notion.site/2ef616226625809a8e3acbcc85e38ba0?source=copy_link',
   year: new Date().getFullYear()
 };
