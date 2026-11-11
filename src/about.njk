@@ -11,9 +11,8 @@ permalink: /about/
 
 <div class="about-grid">
   <aside class="profile">
-    <div class="avatar" aria-hidden="true">
-      {{ site.author | first }}
-      <span>✳</span>
+    <div class="avatar">
+      <img src="/assets/profile.jpg" alt="박세연 프로필 사진">
     </div>
     <h2>{{ site.author }}</h2>
     <p>배우는 개발자, 기록하는 사람</p>
@@ -31,7 +30,7 @@ permalink: /about/
       rel="noopener noreferrer"
       style="color: #1b4d3e;"
     >
-      이력서 PDF 보기 ↗
+      이력서 ↗
     </a>
     <a class="button" href="{{ site.portfolio }}" target="_blank" rel="noopener noreferrer" style="color: #1b4d3e;" >포트폴리오 ↗</a>
     {% if site.github %}
