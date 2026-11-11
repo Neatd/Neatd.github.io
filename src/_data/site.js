@@ -5,5 +5,6 @@ export default {
   url: process.env.SITE_URL || 'https://Neatd.github.io',
   github: 'https://github.com/Neatd',
   email: 'psytidy@gmail.com',
+  portfolio: 'https://your-portfolio-url.com',
   year: new Date().getFullYear()
 };
