@@ -1,0 +1,8 @@
+---
+layout: base.njk
+---
+<div class="article-shell"><a class="back" href="/posts/">← 모든 글</a>
+<header class="article-header"><p class="eyebrow">{{ category or '개발 기록' }}</p><h1>{{ title }}</h1><p class="lead">{{ description }}</p><div class="meta"><span>{{ site.author }}</span><span>·</span><time datetime="{{ page.date | iso }}">{{ page.date | dateKo }}</time><span>·</span><span>{{ content | readTime }}분 읽기</span></div><div class="tags">{% for topic in topics %}<a class="tag" href="/tags/?tag={{ topic | urlencode }}">{{ topic }}</a>{% endfor %}</div></header>
+<div class="article-grid"><article class="prose" data-article>{{ content | safe }}</article><aside class="toc" aria-label="목차" hidden><p class="eyebrow">이 글의 목차</p><ol data-toc></ol></aside></div>
+<div class="article-end"><span class="mark" aria-hidden="true">s.</span><div><strong>함께 배우는 기록</strong><p>오늘의 발견을 다음 문제의 힌트로 남깁니다.</p></div><button type="button" class="button quiet" data-copy-link hidden>링크 복사</button><span class="sr-only" role="status" data-copy-status></span></div>
+<section class="related"><div class="section-heading"><h2>이어서 읽기</h2><a href="/posts/">모든 글 →</a></div><div class="grid">{% set count = 0 %}{% for post in collections.articles %}{% if post.url != page.url and count < 2 %}{% include 'card.njk' %}{% set count = count + 1 %}{% endif %}{% endfor %}</div></section></div>

@@ -1,0 +1,6 @@
+---
+layout: base.njk
+title: 태그
+permalink: /tags/
+---
+<header class="page-heading"><p class="eyebrow">TOPICS</p><h1>관심사를 따라 읽기</h1><p>하나의 주제에서 다음 이야기로.</p></header><section class="listing" data-filter-scope><div class="chips" data-filter-controls hidden><button type="button" class="chip active" data-filter="" aria-pressed="true">전체 {{ collections.articles | length }}</button>{% for topic in collections.topics %}<button type="button" class="chip" data-filter="{{ topic }}" aria-pressed="false">{{ topic }} <span>{{ collections.articles | topicCount(topic) }}</span></button>{% endfor %}</div><p class="result-count tag-count" role="status" data-count>전체 {{ collections.articles | length }}개의 글</p><noscript><p>모든 글을 아래에서 읽을 수 있습니다.</p></noscript><div class="grid">{% for post in collections.articles %}{% include 'card.njk' %}{% endfor %}</div><div class="empty" data-empty hidden><h2>이 태그로 작성된 글이 없어요.</h2><button class="button quiet" type="button" data-reset>전체 글 보기</button></div></section>
