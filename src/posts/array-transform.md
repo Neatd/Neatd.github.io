@@ -4,7 +4,7 @@ description: "필요한 항목을 고르고, 필요한 모양으로 바꾸는 �
 date: 2026-11-09T09:00:00+09:00
 category: 코드 노트
 topics: [JavaScript, 리팩터링]
-draft: false
+draft: true
 ---
 ## 선택과 변환을 구분하기
 

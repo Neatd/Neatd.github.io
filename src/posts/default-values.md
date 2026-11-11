@@ -4,7 +4,7 @@ description: "값이 없는 경우와 거짓으로 평가되는 값을 구분하
 date: 2026-11-06T09:00:00+09:00
 category: JavaScript
 topics: [JavaScript, 디버깅]
-draft: false
+draft: true
 ---
 ## 0도 유효한 값일 때
 

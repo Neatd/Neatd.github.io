@@ -4,7 +4,7 @@ description: "증상, 가설, 확인, 결론. 문제를 해결한 뒤에도 남�
 date: 2026-11-03T09:00:00+09:00
 category: 개발 습관
 topics: [디버깅, 글쓰기]
-draft: false
+draft: true
 ---
 ## 관찰한 증상부터 적기
 
