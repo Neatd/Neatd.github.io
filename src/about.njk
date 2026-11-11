@@ -5,8 +5,7 @@ permalink: /about/
 ---
 <header class="page-heading">
   <p class="eyebrow">ABOUT ME</p>
-  <h1>저를 소개합니다.</h1>
-  <p>안녕하세요 {{ site.author }}입니다.</p>
+  <h1 새로운 분야에도 자신 있게 노력합니다.</h1>
 </header>
 
 <div class="about-grid">
@@ -19,10 +18,7 @@ permalink: /about/
     <span class="profile-status">
       <span class="dot"></span>취업 준비생
     </span>
-  </aside>
-
-  <div class="prose about-copy">
-    <h2>이력서나 포트폴리오를 보시려면 이쪽을 봐주세용</h2>
+    <p>
     <a
       class="button"
       href="/assets/resume.pdf"
@@ -32,11 +28,16 @@ permalink: /about/
     >
       이력서 ↗
     </a>
+    <p>
     <a class="button" href="{{ site.portfolio }}" target="_blank" rel="noopener noreferrer" style="color: #1b4d3e;" >포트폴리오 ↗</a>
+    <p>
     {% if site.github %}
     <a class="button" href="{{ site.github }}"target="_blank" rel="noopener noreferrer" style="color: #1b4d3e;">GitHub ↗</a>
     {% endif %}
     <p>
+  </aside>
+
+  <div class="prose about-copy">
     
     <h2>기록을 남기는 이유</h2>
     <p>문제를 해결한 뒤에도 왜 그렇게 해결했는지 잊어버릴 때가 있습니다. 결과뿐 아니라 질문과 선택의 이유를 남겨, 다시 꺼내 읽을 수 있는 기록을 쌓아갑니다.</p>

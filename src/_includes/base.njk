@@ -39,9 +39,6 @@
     <div>
       <a href="/" class="footer-title">{{ site.title }}</a>
       <p></p> <!-- 블로그 맨 밑에 한줄 넣을 수 있는 곳 -->
-      {% if site.email %}
-          <a href="mailto:{{ site.email }}">이메일 ↗</a>
-      {% endif %}
       <small>© {{ site.year }} {{ site.author }}</small>
     </div>
     <div class="footer-links">
@@ -51,9 +48,8 @@
       {% endif %}
       {% if site.email %}
         <a href="mailto:{{ site.email }}">이메일 ↗</a>
-      {% endif %}
-      <a href="/about/">소개 ↗</a>
-    </div>
+      {% endif %}    
+      </div>
   </footer>
 </body>
 </html>
