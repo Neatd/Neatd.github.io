@@ -3,5 +3,38 @@ layout: base.njk
 title: 글 목록
 permalink: /posts/
 ---
-<header class="page-heading"><p class="eyebrow">ALL NOTES</p><h1>차곡차곡, 개발 기록</h1><p>시행착오도 발견도, 다음의 나를 위한 힌트로.</p></header>
-<section class="listing" data-filter-scope><div class="filter-bar"><div class="search" data-search-control hidden><label class="sr-only" for="search-input">제목, 설명, 태그 검색</label><span aria-hidden="true">⌕</span><input id="search-input" type="search" placeholder="제목, 설명, 태그로 검색" autocomplete="off"></div><p class="result-count" role="status" data-count>전체 {{ collections.articles | length }}개의 글</p></div><div class="chips" data-filter-controls hidden><button type="button" class="chip active" data-filter="" aria-pressed="true">전체</button>{% for topic in collections.topics %}<button type="button" class="chip" data-filter="{{ topic }}" aria-pressed="false">{{ topic }}</button>{% endfor %}</div><div class="grid">{% for post in collections.articles %}{% include 'card.njk' %}{% endfor %}</div><div class="empty" data-empty hidden><h2>검색 결과가 없어요.</h2><p>다른 검색어나 태그로 찾아보세요.</p><button class="button quiet" type="button" data-reset>검색 초기화</button></div></section>
+<header class="page-heading">
+  <p class="eyebrow">ALL NOTES</p>
+  <h1>나의 개발 기록</h1>
+  <p></p> <!-- 시행착오도 발견도, 다음의 나를 위한 힌트로. -->
+</header>
+
+<section class="listing" data-filter-scope>
+  <div class="filter-bar">
+    <div class="search" data-search-control hidden>
+      <label class="sr-only" for="search-input">제목, 설명, 태그 검색</label>
+      <span aria-hidden="true">⌕</span>
+      <input id="search-input" type="search" placeholder="제목, 설명, 태그로 검색" autocomplete="off">
+    </div>
+    <p class="result-count" role="status" data-count>전체 {{ collections.articles | length }}개의 글</p>
+  </div>
+
+  <div class="chips" data-filter-controls hidden>
+    <button type="button" class="chip active" data-filter="" aria-pressed="true">전체</button>
+    {% for topic in collections.topics %}
+      <button type="button" class="chip" data-filter="{{ topic }}" aria-pressed="false">{{ topic }}</button>
+    {% endfor %}
+  </div>
+
+  <div class="grid">
+    {% for post in collections.articles %}
+      {% include 'card.njk' %}
+    {% endfor %}
+  </div>
+
+  <div class="empty" data-empty hidden>
+    <h2>검색 결과가 없네요...</h2>
+    <p>다른 검색어로 찾아보세요.</p>
+    <button class="button quiet" type="button" data-reset>검색 초기화</button>
+  </div>
+</section>

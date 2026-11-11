@@ -3,4 +3,50 @@ layout: base.njk
 title: 소개
 permalink: /about/
 ---
-<header class="page-heading"><p class="eyebrow">ABOUT ME</p><h1>코드 너머의 이야기를<br>쌓아갑니다.</h1><p>안녕하세요, {{ site.author }}입니다.</p></header><div class="about-grid"><aside class="profile"><div class="avatar" aria-hidden="true">{{ site.author | first }}<span>✳</span></div><h2>{{ site.author }}</h2><p>배우는 개발자, 기록하는 사람</p><span class="profile-status"><span class="dot"></span>꾸준히 성장하는 중</span></aside><div class="prose about-copy"><h2>기록을 남기는 이유</h2><p>문제를 해결한 뒤에도 왜 그렇게 해결했는지 잊어버릴 때가 있습니다. 결과뿐 아니라 질문과 선택의 이유를 남겨, 다시 꺼내 읽을 수 있는 기록을 쌓아갑니다.</p><p>새로운 개념을 제 언어로 풀어보고, 작은 코드로 실험하고, 확인한 범위 안에서 설명하려 합니다.</p><h2>관심 있는 이야기</h2><ul><li>읽기 쉽고 고치기 쉬운 코드</li><li>직접 재현하며 이해하는 웹 개발</li><li>시행착오에서 발견하는 더 나은 방법</li></ul><h2>기록의 원칙</h2><p>맥락을 먼저 설명하고, 재현 가능한 예시를 남기고, 틀린 내용은 고칩니다. 작은 배움도 꾸준히 남기면 다음 문제를 푸는 실마리가 된다고 생각합니다.</p>{% if site.github or site.email %}<h2>이야기 나누기</h2><p>{% if site.github %}<a href="{{ site.github }}">GitHub ↗</a>{% endif %} {% if site.email %}<a href="mailto:{{ site.email }}">이메일 ↗</a>{% endif %}</p>{% endif %}</div></div>
+<header class="page-heading">
+  <p class="eyebrow">ABOUT ME</p>
+  <h1>ㅁㄴㅇ<br>쌓아갑니다.</h1>
+  <p>안녕하세요, {{ site.author }}입니다.</p>
+</header>
+
+<div class="about-grid">
+  <aside class="profile">
+    <div class="avatar" aria-hidden="true">
+      {{ site.author | first }}
+      <span>✳</span>
+    </div>
+    <h2>{{ site.author }}</h2>
+    <p>배우는 개발자, 기록하는 사람</p>
+    <span class="profile-status">
+      <span class="dot"></span>꾸준히 성장하는 중
+    </span>
+  </aside>
+
+  <div class="prose about-copy">
+    <h2>기록을 남기는 이유</h2>
+    <p>문제를 해결한 뒤에도 왜 그렇게 해결했는지 잊어버릴 때가 있습니다. 결과뿐 아니라 질문과 선택의 이유를 남겨, 다시 꺼내 읽을 수 있는 기록을 쌓아갑니다.</p>
+    <p>새로운 개념을 제 언어로 풀어보고, 작은 코드로 실험하고, 확인한 범위 안에서 설명하려 합니다.</p>
+
+    <h2>관심 있는 이야기</h2>
+    <ul>
+      <li>읽기 쉽고 고치기 쉬운 코드</li>
+      <li>직접 재현하며 이해하는 웹 개발</li>
+      <li>시행착오에서 발견하는 더 나은 방법</li>
+    </ul>
+
+    <h2>기록의 원칙</h2>
+    <p>맥락을 먼저 설명하고, 재현 가능한 예시를 남기고, 틀린 내용은 고칩니다. 작은 배움도 꾸준히 남기면 다음 문제를 푸는 실마리가 된다고 생각합니다.</p>
+
+    {% if site.github or site.email %}
+      <h2>이야기 나누기</h2>
+      <p>
+        {% if site.github %}
+          <a href="{{ site.github }}">GitHub ↗</a>
+        {% endif %}
+        {% if site.email %}
+          <a href="mailto:{{ site.email }}">이메일 ↗</a>
+        {% endif %}
+      </p>
+    {% endif %}
+  </div>
+</div>
