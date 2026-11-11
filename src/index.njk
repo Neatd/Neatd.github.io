@@ -35,7 +35,7 @@ layout: base.njk
 </section>
 
 <div class="strip">
-  <span>현재 기록</span>
+  <span>지금까지의 기록</span>
   <span><strong>{{ collections.articles | length }}</strong>개의 글 <i>/</i> <strong>{{ collections.topics | length }}</strong>개의 관심사</span>
 </div>
 
@@ -51,7 +51,7 @@ layout: base.njk
     {% for post in collections.articles | take(4) %}
       {% include 'card.njk' %}
     {% else %}
-      <p>첫 번째 기록을 기다리고 있습니다.</p>
+      <p>조금만 기다려주세요.</p>
     {% endfor %}
   </div>
 </section>
