@@ -24,11 +24,17 @@ permalink: /about/
 
   <div class="prose about-copy">
     <h2>이력서나 포트폴리오를 보시려면 이쪽을 봐주세용</h2>
+    <a
+      class="button"
+      href="/assets/resume.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      이력서 PDF 보기 ↗
+    </a>
     <p>
-      <a href="mailto:{{ site.portfolio }}">포트폴리오 ↗</a>
+      <a href="{{ site.portfolio }}" target="_blank" rel="noopener">포트폴리오 ↗</a>
     <p>
-    <a href="https://docs.google.com/gview?url=https://github.com/user-attachments/files/34686731/Seyeon-Park-.-.pdf&embedded=true" target="_blank" rel="noopener">
-    이력서 보기 ↗ </a>
 
     <h2>기록을 남기는 이유</h2>
     <p>문제를 해결한 뒤에도 왜 그렇게 해결했는지 잊어버릴 때가 있습니다. 결과뿐 아니라 질문과 선택의 이유를 남겨, 다시 꺼내 읽을 수 있는 기록을 쌓아갑니다.</p>
@@ -48,7 +54,7 @@ permalink: /about/
       <h2>이야기 나누기</h2>
       <p>
         {% if site.github %}
-          <a href="{{ site.github }}">GitHub ↗</a>
+          <a href="{{ site.github }}"target="_blank" rel="noopener">GitHub ↗</a>
         {% endif %}
         {% if site.email %}
           <a href="mailto:{{ site.email }}">이메일 ↗</a>
