@@ -1,7 +1,7 @@
 ---
 title: "이코테"
 description: "이것이 코딩 테스트다 해본 것들"
-date: 2026-11-12T09:00:00+09:00
+date: 2025-02-13T09:00:00+09:00
 category: 개발 기록
 topics: [Python, 코딩테스트, 알고리즘]
 draft: false
@@ -23,7 +23,7 @@ draft: false
 <script src="https://gist.github.com/Neatd/d1ea4d788dcce6f176cb65f129462150.js"></script>
 
 ### Binary Search 이진 탐색
-<script src="https://gist.github.com/Neatd/d1ea4d788dcce6f176cb65f129462150.js"></script>
+<script src="https://gist.github.com/Neatd/e79990e696a052be05932fc4f8064fab.js"></script>
 
 ### Greedy 그리디
 <script src="https://gist.github.com/Neatd/1bbff84ad291c711b5db872b9a84e2eb.js"></script>
