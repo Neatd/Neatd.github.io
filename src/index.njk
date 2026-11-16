@@ -1,0 +1,70 @@
+---
+layout: base.njk
+---
+<section class="hero">
+  <div>
+    <!-- <p class="eyebrow"><span class="dot"></span> </p> A DEVELOPER'S FIELD NOTES -->
+    <h1>열심히 배우고,<br><span>기록하겠습니다.</span></h1>
+    <p class="hero-description">저는 정말 다양한 분야에 관심이 많습니다.<br>이곳에 경험을 보이겠습니다.</p>
+    <div class="hero-actions">
+      <a href="/posts/" class="button">개발 기록 둘러보기 ↗</a>
+      <a href="/about/" class="text-link">저를 소개합니다 →</a>
+    </div>
+  </div>
+  <div class="code-note" aria-label="개발 노트 코드 일러스트">
+    <div class="code-bar">
+      <span class="code-dots">● ● ●</span>
+      <span>seyeon-note.js</span>
+      <span>JS</span>
+    </div>
+    <pre><code><span class="comment">// 조금씩, 꾸준히 나아가기</span>
+<span class="keyword">const</span> developer = {
+  name: <span class="string">'{{ site.author }}'</span>,
+  interests: [<span class="string">'AI', 'Agent', 'LLM', '보안'</span>],
+  routine: () =&gt; {
+    learn();
+    build();
+    <span class="highlight">write();</span>
+  }
+};</code></pre>
+    <div class="code-bar bottom">
+      <span><span class="dot"></span> 오늘도 한 걸음</span>
+      <span>UTF-8</span>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <span>지금까지의 기록</span>
+  <span><strong>{{ collections.articles | length }}</strong>개의 글 <i>/</i> <strong>{{ collections.topics | length }}</strong>개의 관심사</span>
+</div>
+
+<section class="latest">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">LATEST NOTES</p>
+      <h2>최근에 남긴 기록</h2>
+    </div>
+    <a href="/posts/">모든 글 보기 →</a>
+  </div>
+  <div class="grid">
+    {% for post in collections.articles | take(4) %}
+      {% include 'card.njk' %}
+    {% else %}
+      <p>조금만 기다려주세요.</p>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="topic-panel">
+  <div>
+    <p class="eyebrow">EXPLORE BY TOPIC</p>
+    <h2>나의 관심사들</h2>
+    <p></p> <!-- 하나의 질문에서 시작한, 여러 갈래의 이야기. -->
+  </div>
+  <div class="topic-cloud">
+    {% for topic in collections.topics %}
+      <a href="/tags/?tag={{ topic | urlencode }}"># {{ topic }} <span>{{ collections.articles | topicCount(topic) }}</span></a>
+    {% endfor %}
+  </div>
+</section>

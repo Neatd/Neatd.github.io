@@ -1,0 +1,20 @@
+{
+  "name": "seyeon-dev-blog",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "개발하며 배우고 발견한 것을 기록하는 기술 블로그",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy",
+    "check": "node scripts/check.mjs",
+    "test": "node scripts/test.mjs"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "3.1.8",
+    "js-yaml": "4.3.2"
+  }
+}
