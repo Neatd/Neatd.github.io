@@ -1,7 +1,7 @@
 ---
 title: "파이썬 코테 직전 정리 — 문법·자료구조·표준 라이브러리"
 description: "입출력, 정렬과 lambda, 문자열, dict·set, deque·heap·bisect부터 자주 틀리는 문법까지 빠르게 훑는 파이썬 노트."
-date: 2026-11-16T09:00:00+09:00
+date: 2025-08-02T09:00:00+09:00
 category: 코딩테스트
 topics: [Python, 코딩테스트, 자료구조]
 draft: false
